@@ -1,20 +1,39 @@
-Design Document,Initial thoughts and implementation Details
+					 DESIGN DOCUMENT
 
-**************
-*Rahmengerüst*
-**************
+	Initial thoughts and implementation Details
 
-	-> Fassadengerüst Berechnungen
+
+					 WAS WIR WOLLEN
+
+	1.Erstellen einer Materialliste für die Baustelle(Fassaden-und Modulgerüst)
+			-> Speicherung der erstellten Liste bei bedarf
+			-> Angebot erstellen und Speichern bei bedarf
+						-> Entweder Standardberechnung oder Werte eingeben
+			
+	2. Grobe Statikberechnung
+
+					  
+
+						REALITÄT
+
+					**************
+					*Rahmengerüst*
+					**************
+
+	1. Fassadengerüst Berechnungen
 			->Nur Traufseite				implementiert
 			->Nur Giebel 
 			->Alle vier Seiten
 			
 			
-*************
-*Modulgerüst*
-*************
-		->Raumgerüst Berechnungen
+					*************
+					*Modulgerüst*
+					*************	
+	
+	1. Raumgerüst Berechnungen
 
-************
-*Traggerüst*
-************
+					************
+					*Traggerüst*
+					************
+
+				GRUNDGEDANKE PROGRAMMSTRUKTUR
