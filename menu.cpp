@@ -4,6 +4,8 @@
 #include <sstream>
 
 
+//Converts the Input type into the
+//return value type examples
 template<typename Target,typename Source>
 Target lexical_cast(Source arg)
 {
@@ -43,7 +45,11 @@ int main_menu(){
 }
 
 int scaff_menu(){
-	system("clear");
+	#ifdef _WIN32
+			system("cls");
+		#else 
+			system("clear");
+		#endif
 	int choice=0;
 	std::string temp("");
 	banner();
@@ -80,7 +86,11 @@ void my_remove(const char *rm) {
 }
 
 void delete_work(){
-	system("clear");
+	#ifdef _WIN32
+			system("cls");
+		#else 
+			system("clear");
+		#endif
 	file f("c_siter.ger");
 	banner();
 	f.show_content();
@@ -117,7 +127,11 @@ void new_modul(){
 }
 
 std::string new_facade(){
-		system("clear");
+		#ifdef _WIN32
+			system("cls");
+		#else 
+			system("clear");
+		#endif
 		input User;
 		banner();
 		std::cout << "\n\n\t\t\tAnforderungen\n\n";
@@ -146,11 +160,18 @@ std::string new_facade(){
 			exit(0);
 		}
 		double lang, hoch;
+		std::string conv;
 		std::cout << "\tHoehe: ";
+		std::cin.sync();
 		std::cin >> hoch;
+		//std::getline(std::cin, conv);
+		//hoch = lexical_cast<double, std::string>(conv);
 		User.height = (hoch *=100);
 		std::cout << "\tLaenge: ";
+		std::cin.sync();
 		std::cin >> lang;
+		//std::getline(std::cin, conv);
+		//lang = lexical_cast<double, std::string>(conv);
 		User.lenght = lang *=100;
 		scaff scaff1(User);
 		User.name += ".data";

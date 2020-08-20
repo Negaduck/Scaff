@@ -53,6 +53,7 @@ int {one,one_h,two,two_h,three};
 enum frame_height:
 int {mini,small,medium,normal};
 
+//We represent Facadescaffold as class
 class scaff {
 private:
     components<double> weight;
@@ -71,7 +72,7 @@ private:
     void short_fields();    //sets 2.5m fields and shorter
     void long_fields();     //sets 3m fields and shorter
     void set_frames();      //calculates the the frames
-    void set_stamp();       //writes a meterial list in a file
+    void set_stamp();       //writes a material list in a file
     double set_stalkload(bay_width bw, int floors);     //calculates the forces under the base jack
     void first_print(FILE*);        //prints the first part of the calculated scaff
                                     // in the file

@@ -1,0 +1,20 @@
+Design Document,Initial thoughts and implementation Details
+
+**************
+*Rahmengerüst*
+**************
+
+	-> Fassadengerüst Berechnungen
+			->Nur Traufseite				implementiert
+			->Nur Giebel 
+			->Alle vier Seiten
+			
+			
+*************
+*Modulgerüst*
+*************
+		->Raumgerüst Berechnungen
+
+************
+*Traggerüst*
+************
