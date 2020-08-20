@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="file.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="400" topLine="0" />
+	</File>
+	<File name="file.h" open="0" top="0" tabpos="7">
+		<Cursor position="394" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="208" topLine="0" />
+	</File>
+	<File name="menu.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="3158" topLine="72" />
+	</File>
+	<File name="menu.h" open="1" top="0" tabpos="7">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="modul_scaff.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="709" topLine="0" />
+	</File>
+	<File name="modul_scaff.h" open="1" top="0" tabpos="3">
+		<Cursor position="257" topLine="3" />
+	</File>
+	<File name="scaff.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="815" topLine="3" />
+	</File>
+	<File name="scaff.h" open="1" top="0" tabpos="4">
+		<Cursor position="274" topLine="9" />
+	</File>
+	<File name="umlaute.h" open="0" top="0" tabpos="0">
+		<Cursor position="405" topLine="0" />
+	</File>
+	<File name="version.h" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

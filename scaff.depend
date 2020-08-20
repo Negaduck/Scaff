@@ -1,0 +1,101 @@
+# depslib dependency file v1.0
+1384630905 source:/home/negaduck/Code/C++/Projects/scaff/file.cpp
+	"file.h"
+
+1384644583 /home/negaduck/Code/C++/Projects/scaff/file.h
+	<string>
+	<fstream>
+	<list>
+	<iostream>
+	<cstdlib>
+
+1387111461 source:/home/negaduck/Code/C++/Projects/scaff/main.cpp
+	<iostream>
+	"scaff.h"
+	"file.h"
+	"menu.h"
+
+1386791772 /home/negaduck/Code/C++/Projects/scaff/scaff.h
+	<string>
+	"umlaute.h"
+
+1384644583 /home/negaduck/Code/C++/Projects/scaff/umlaute.h
+
+1386792463 /home/negaduck/Code/C++/Projects/scaff/menu.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<fstream>
+	<string>
+	"file.h"
+	"scaff.h"
+
+1387111488 source:/home/negaduck/Code/C++/Projects/scaff/menu.cpp
+	"menu.h"
+	"version.h"
+	"modul_scaff.h"
+	<sstream>
+
+1386791770 source:/home/negaduck/Code/C++/Projects/scaff/scaff.cpp
+	"scaff.h"
+	"umlaute.h"
+
+1384630619 /home/negaduck/Code/C++/Projects/scaff/version.h
+
+1387111534 source:/home/negaduck/Code/C++/Projects/scaff/modul_scaff.cpp
+	"modul_scaff.h"
+	<iostream>
+
+1386867918 /home/negaduck/Code/C++/Projects/scaff/modul_scaff.h
+	"scaff.h"
+
+1387094562 source:/home/alex/Downloads/scaff/scaff/main.cpp
+	<iostream>
+	"scaff.h"
+	"file.h"
+	"menu.h"
+
+1387094612 /home/alex/Downloads/scaff/scaff/scaff.h
+	<string>
+	"umlaute.h"
+
+1387094576 /home/alex/Downloads/scaff/scaff/umlaute.h
+
+1387094570 /home/alex/Downloads/scaff/scaff/file.h
+	<string>
+	<fstream>
+	<list>
+	<iostream>
+	<cstdlib>
+
+1387094568 /home/alex/Downloads/scaff/scaff/menu.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<fstream>
+	<string>
+	"file.h"
+	"scaff.h"
+
+1387094608 source:/home/alex/Downloads/scaff/scaff/menu.cpp
+	"menu.h"
+	"version.h"
+	"modul_scaff.h"
+	<sstream>
+
+1597902605 /home/alex/Downloads/scaff/scaff/version.h
+
+1387094616 /home/alex/Downloads/scaff/scaff/modul_scaff.h
+	"scaff.h"
+
+1387094628 source:/home/alex/Downloads/scaff/scaff/modul_scaff.cpp
+	"modul_scaff.h"
+	<iostream>
+
+1387094494 source:/home/alex/Downloads/scaff/scaff/scaff.cpp
+	"scaff.h"
+	"umlaute.h"
+
+1597902448 source:/home/alex/Downloads/scaff/scaff/file.cpp
+	"file.h"
+
