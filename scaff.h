@@ -4,6 +4,7 @@
 #include <string>
 
 #include "umlaute.h"
+#include "DataBase.h"
 
 //Needed input to calculate
 //the components for the scaffold.
@@ -71,8 +72,12 @@ private:
     frame_width fw;
 public:
     explicit scaff(input u_input);
+    void print_data(FILE *);
+    void save_data();
     ~scaff();
 private:
+    
+
     void set_floors();
     void set_fields();      //determines if we have 3m fields or not
     void short_fields();    //sets 2.5m fields and shorter
@@ -89,11 +94,15 @@ private:
                     bay_width long_field,
                     bay_width short_field,
                     int number_Sfields);
-    void set_stamp();                                   //writes a material list in a file
+
+    //
+    //TODO
+    //These functions are not needed in this 
+    // class 
+    //void set_stamp();                                   //writes a material list in a file
     void first_print(FILE*);                            //prints the first part of the calculated scaff
-                                                        // in the file
+                                                          // in the file
     void second_print(FILE*);                           //prints the second part in the file
-    void append_data(const char *data);
     
 };
 

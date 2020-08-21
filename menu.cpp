@@ -4,6 +4,15 @@
 #include <sstream>
 
 
+//Little debug function
+//that just prints the given 
+//parameter T
+template<typename T>
+void DEBUG(T OutVal){
+	std::cerr << OutVal << std::endl;
+}
+
+
 //Converts the Input type into the
 //return value type examples
 template<typename Target,typename Source>
@@ -126,13 +135,34 @@ void new_modul(){
 
 }
 
-std::string new_facade(){
+void new_facade(){
+	input FacadeInput;
+	GetUserInput(FacadeInput);
+    scaff scaff1(FacadeInput);
+	scaff1.print_data(stdout);
+	int choice=0;
+	std::cout << "\n1Wollen Sie die Daten speichern?\n";
+	std::cin>>choice;
+	switch(choice){
+		case 1:
+			scaff1.save_data();
+			break;
+		default:
+			exit(0);
+	}
+
+}
+
+int GetUserInput(input &User){
 		#ifdef _WIN32
 			system("cls");
 		#else 
 			system("clear");
 		#endif
-		input User;
+		// From here we interact with the 
+		//user and try to get all the needed
+		// data to calculate components
+		//input User;
 		banner();
 		std::cout << "\n\n\t\t\tAnforderungen\n\n";
 		std::cout << "\tBaustellenname: ";
@@ -173,8 +203,22 @@ std::string new_facade(){
 		//std::getline(std::cin, conv);
 		//lang = lexical_cast<double, std::string>(conv);
 		User.lenght = lang *=100;
+		//Now we get all the Data we need
+		//
 		//Here starts the actual heart of the program to beat
-		scaff scaff1(User);
+		//We can create a Scaff object to compute material
+		//scaff scaff1(User);
 		User.name += ".data";
-		return User.name;
+		return 0;
+}
+
+int add_entry(const char *new_entry){
+	FILE* file=fopen("c_siter.ger", "a");
+    if(file == NULL) {
+        printf("Dateifehler...\n");
+        return 1;
+    }
+    fprintf(file,"%s\n",new_entry);
+    fclose(file);
+	return 0;
 }

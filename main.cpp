@@ -8,8 +8,10 @@ int main() {
     switch(main_menu()) {
     case 1:
         switch(scaff_menu()) {
-        case 1:
-            print_file(new_facade().c_str());
+        case 1: 
+            //input FacadeInput;
+            new_facade();
+            //print_file(new_facade().c_str());
             break;
         case 2:
             delete_work();

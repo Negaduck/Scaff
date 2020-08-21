@@ -13,8 +13,10 @@
 template<typename Target,typename Source>
 Target lexical_cast(Source arg);
 
+int add_entry(const char *new_entry);
 void banner();
-std::string new_facade();
+int GetUserInput(input &User);
+void new_facade();
 void new_modul();
 void delete_work();
 void print_file(const char *file_name);

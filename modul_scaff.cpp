@@ -15,6 +15,8 @@ modul_scaff::modul_scaff(m_input user_input): material({0,{0,0,0,0,0,0,0},{0,0,0
 
 }
 
+
+//Still profuction code
 void modul_scaff::set_floors(){
     if(user.height % 200) {
         int rest_height = user.height % 200;
