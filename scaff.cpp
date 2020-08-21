@@ -264,7 +264,7 @@ void scaff::one_field( frame_width f_choice, bay_width b_choice) {
     }
     material.ladder[1]    = floors;
     material.dia[b_choice] = ( (int)( bays / 5)+1)* floors ;
-    set_stamp();
+    //set_stamp();
 }
 
 void scaff::two_fields( frame_width f_choice,
@@ -299,7 +299,7 @@ void scaff::two_fields( frame_width f_choice,
     } else {
         material.e_guard[1] = floors*2;
     }
-    set_stamp();
+    //set_stamp();
 }
 
 void scaff::set_frames() {
@@ -349,6 +349,9 @@ double scaff::set_weight(components<int>& lhs, components<double>& rhs) {
 
 }
 
+
+//Make this function more generic,
+//give it a file where to print that data 
 void scaff::set_stamp() {
     append_data(u_input.name.c_str());
     u_input.name += ".data";
@@ -401,6 +404,7 @@ void scaff::set_stamp() {
     fclose(file);
 }
 
+//MAybe add to database as AddEntry(const char data)
 void scaff::append_data(const char *data) {
     FILE* file=fopen("c_siter.ger", "a");
     if(file == NULL) {
