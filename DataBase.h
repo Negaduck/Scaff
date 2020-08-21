@@ -1,5 +1,5 @@
-#ifndef FILE_H
-#define FILE_H
+#ifndef DATABASE_H
+#define DATABASE_H
 
 #include <string>
 #include <fstream>
@@ -12,7 +12,7 @@
 //For every new Construction Site the User
 //adds, we take the construction name 
 //append += .data and save this in a file
-// called s_siter.ger
+// called c_siter.ger
 //
 class DataBase {
 private:
@@ -28,4 +28,4 @@ public:
 
 };
 
-#endif // FILE_H
+#endif // DATABASE

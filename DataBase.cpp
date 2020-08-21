@@ -1,4 +1,4 @@
-#include "file.h"
+#include "DataBase.h"
 
 DataBase::DataBase(std::string name):file_name(name),
 							 		content(){
