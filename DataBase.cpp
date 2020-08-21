@@ -35,3 +35,7 @@ void DataBase::show_content(){
 	for(auto i:content)
 		std::cout << i.c_str() << '\n';
 }
+
+void DataBase::add_entry(const char *new_entry){
+	content.push_back(new_entry);
+}

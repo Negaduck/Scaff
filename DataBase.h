@@ -24,7 +24,7 @@ public:
 	DataBase(std::string name);
 	void show_content();
 	void delete_entry(std::string entry){content.remove(entry);}
-	int add_entry(const char *new_entry);
+	void add_entry(const char *new_entry);
 	~DataBase();
 };
 
