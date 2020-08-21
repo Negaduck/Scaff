@@ -91,7 +91,7 @@ void delete_work(){
 		#else 
 			system("clear");
 		#endif
-	file f("c_siter.ger");
+	DataBase f("c_siter.ger");
 	banner();
 	f.show_content();
 	std::string del_name;
@@ -173,6 +173,7 @@ std::string new_facade(){
 		//std::getline(std::cin, conv);
 		//lang = lexical_cast<double, std::string>(conv);
 		User.lenght = lang *=100;
+		//Here starts the actual heart of the program to beat
 		scaff scaff1(User);
 		User.name += ".data";
 		return User.name;

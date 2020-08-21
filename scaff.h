@@ -56,10 +56,16 @@ int {mini,small,medium,normal};
 //We represent Facadescaffold as class
 class scaff {
 private:
-    components<double> weight;
+    //Holds for every single component the corresponding weight in kg
+    components<double> weight; 
+    //After the creation of the Scaff object is done this struct 
+    //holds the amount of every single component     
     components<int> material;
+    //Store the input    
     input u_input;
     int bays,short_bays,floors;
+    //Enum to determine if we need 0.7m frames
+    //or 1.00m frames 
     bay_width bw[2];
     frame_height fh;
     frame_width fw;
@@ -72,21 +78,23 @@ private:
     void short_fields();    //sets 2.5m fields and shorter
     void long_fields();     //sets 3m fields and shorter
     void set_frames();      //calculates the the frames
-    void set_stamp();       //writes a material list in a file
+    
     double set_stalkload(bay_width bw, int floors);     //calculates the forces under the base jack
-    void first_print(FILE*);        //prints the first part of the calculated scaff
-                                    // in the file
-    void second_print(FILE*);       //prints the second part in the file
-    void append_data(const char *data);
-    double set_weight(components<int>& lhs,         //calculates the weight of the complete scaffold
+    double set_weight(components<int>& lhs,             //calculates the weight of the complete scaffold
                       components<double>& rhs);
-    void one_field( frame_width f_choice,           //the fields set here are all of the same
+    void one_field( frame_width f_choice,               //the fields set here are all of the same
                     bay_width b_choice);
 
     void two_fields(frame_width f_choice,
                     bay_width long_field,
                     bay_width short_field,
                     int number_Sfields);
+    void set_stamp();                                   //writes a material list in a file
+    void first_print(FILE*);                            //prints the first part of the calculated scaff
+                                                        // in the file
+    void second_print(FILE*);                           //prints the second part in the file
+    void append_data(const char *data);
+    
 };
 
 #endif // SCAFF_H

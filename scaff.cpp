@@ -3,22 +3,35 @@
 #include "umlaute.h"
 
 scaff::scaff(input user_input):
-    //determine the exact
-    //weight of each component
+
+    
+    //Hardcoded weight of layher components
+    //used to calculate the overall weight
+    //of the scaffold with struct components<double> weight * struct components<int> material
+    /*
+    TODO
+    We dont want to support only one Manufacturer
+    Need to add at least Rux 60/100
+              and Plettac AL 70/110 
+    */
     weight( { {{4.0,5.8,7.6,9.5,11.3},  //alu-planks
-        {8.0,11.2,15.0,18.0,21.0},   //steel-planks
-        {7.7,10.8,13.9,17.0,20.1}
-    },  //wodden-planks
-    {   {8.4,12.0,19.0},             //normal-frames
-        {11.2,15.4,23.5}
-    },           //wide-frames
+        {8.0,11.2,15.0,18.0,21.0},      //steel-planks
+        {7.7,10.8,13.9,17.0,20.1}       //wodden-planks
+    },  
+    {   {8.4,12.0,19.0},            //normal-frames
+        {11.2,15.4,23.5}            //wide-frames
+    },           
     {2.2,3.0,3.8,4.6,6.6},       //guards
     {2.5,3.8,5.0,6.3,7.3},       //toe board
     {7.6,7.8,8.8,9.8},           //vertical-braces
     {3.0,4.0},                   //end-guard
     {21.0,24.5},                 //ladder entrance
-    3.2
-}),                       //base jack
+    3.2                          //base jack
+}),                       
+
+//Set while creation some standard values
+// or 0 before the member functions
+//calculates all the data 
 material(), u_input(user_input),
 bays(0),short_bays(0),floors(0),
 bw( { bay_width::two_h,bay_width::three}),
@@ -30,6 +43,7 @@ fw(frame_width::thin) {
 
 }
 
+//Destruktor
 scaff::~scaff() {}
 
 void scaff::set_floors() {

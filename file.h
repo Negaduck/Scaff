@@ -7,18 +7,24 @@
 #include <iostream>
 #include <cstdlib>
 
-class file {
+//
+//This is our small internally database
+//For every new Construction Site the User
+//adds, we take the construction name 
+//append += .data and save this in a file
+// called s_siter.ger
+//
+class DataBase {
 private:
 	std::string file_name;
 	std::list<std::string> content;
 public:
-	file(std::string name);
-	void show_content(){
-		for(auto i:content)
-			std::cout << i.c_str() << '\n';
-	}
+	//Read in all Names(Construction sites)
+	//we saved in "c_siter.ger"
+	DataBase(std::string name);
+	void show_content();
 	void delete_entry(std::string entry){content.remove(entry);}
-	~file();
+	~DataBase();
 
 };
 
