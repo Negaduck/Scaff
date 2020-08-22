@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
 1384630905 source:/home/negaduck/Code/C++/Projects/scaff/file.cpp
-	"file.h"
+	"DataBase.h"
 
-1384644583 /home/negaduck/Code/C++/Projects/scaff/file.h
+1384644583 /home/negaduck/Code/C++/Projects/scaff/DataBase.h
 	<string>
 	<fstream>
 	<list>
@@ -12,7 +12,7 @@
 1387111461 source:/home/negaduck/Code/C++/Projects/scaff/main.cpp
 	<iostream>
 	"scaff.h"
-	"file.h"
+	"DataBase.h"
 	"menu.h"
 
 1386791772 /home/negaduck/Code/C++/Projects/scaff/scaff.h
@@ -27,7 +27,7 @@
 	<cstdio>
 	<fstream>
 	<string>
-	"file.h"
+	"DataBase.h"
 	"scaff.h"
 
 1387111488 source:/home/negaduck/Code/C++/Projects/scaff/menu.cpp
@@ -52,7 +52,7 @@
 1387094562 source:/home/alex/Downloads/scaff/scaff/main.cpp
 	<iostream>
 	"scaff.h"
-	"file.h"
+	"DataBase.h"
 	"menu.h"
 
 1387094612 /home/alex/Downloads/scaff/scaff/scaff.h
@@ -61,7 +61,7 @@
 
 1387094576 /home/alex/Downloads/scaff/scaff/umlaute.h
 
-1387094570 /home/alex/Downloads/scaff/scaff/file.h
+1387094570 /home/alex/Downloads/scaff/scaff/DataBase.h
 	<string>
 	<fstream>
 	<list>
@@ -74,7 +74,7 @@
 	<cstdio>
 	<fstream>
 	<string>
-	"file.h"
+	"DataBase.h"
 	"scaff.h"
 
 1387094608 source:/home/alex/Downloads/scaff/scaff/menu.cpp
@@ -97,12 +97,12 @@
 	"umlaute.h"
 
 1597902448 source:/home/alex/Downloads/scaff/scaff/file.cpp
-	"file.h"
+	"DataBase.h"
 
 1597902448 source:/home/alex/Dokumente/Programming/EigeneProjekte/scaff/file.cpp
-	"file.h"
+	"DataBase.h"
 
-1387094570 /home/alex/Dokumente/Programming/EigeneProjekte/scaff/file.h
+1387094570 /home/alex/Dokumente/Programming/EigeneProjekte/scaff/DataBase.h
 	<string>
 	<fstream>
 	<list>
@@ -112,7 +112,7 @@
 1387094562 source:/home/alex/Dokumente/Programming/EigeneProjekte/scaff/main.cpp
 	<iostream>
 	"scaff.h"
-	"file.h"
+	"DataBase.h"
 	"menu.h"
 
 1387094612 /home/alex/Dokumente/Programming/EigeneProjekte/scaff/scaff.h
@@ -127,7 +127,7 @@
 	<cstdio>
 	<fstream>
 	<string>
-	"file.h"
+	"DataBase.h"
 	"scaff.h"
 
 1387094608 source:/home/alex/Dokumente/Programming/EigeneProjekte/scaff/menu.cpp

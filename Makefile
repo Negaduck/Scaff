@@ -40,9 +40,9 @@ OBJDIR_RELEASE = obj/Release
 DEP_RELEASE = 
 OUT_RELEASE = bin/Release/scaff
 
-OBJ_DEBUG = $(OBJDIR_DEBUG)/file.o $(OBJDIR_DEBUG)/main.o $(OBJDIR_DEBUG)/menu.o $(OBJDIR_DEBUG)/modul_scaff.o $(OBJDIR_DEBUG)/scaff.o
+OBJ_DEBUG = $(OBJDIR_DEBUG)/DataBase.o $(OBJDIR_DEBUG)/main.o $(OBJDIR_DEBUG)/menu.o $(OBJDIR_DEBUG)/modul_scaff.o $(OBJDIR_DEBUG)/scaff.o
 
-OBJ_RELEASE = $(OBJDIR_RELEASE)/file.o $(OBJDIR_RELEASE)/main.o $(OBJDIR_RELEASE)/menu.o $(OBJDIR_RELEASE)/modul_scaff.o $(OBJDIR_RELEASE)/scaff.o
+OBJ_RELEASE = $(OBJDIR_RELEASE)/DataBase.o $(OBJDIR_RELEASE)/main.o $(OBJDIR_RELEASE)/menu.o $(OBJDIR_RELEASE)/modul_scaff.o $(OBJDIR_RELEASE)/scaff.o
 
 all: debug release
 
@@ -59,8 +59,8 @@ debug: before_debug out_debug after_debug
 out_debug: before_debug $(OBJ_DEBUG) $(DEP_DEBUG)
 	$(LD) $(LIBDIR_DEBUG) -o $(OUT_DEBUG) $(OBJ_DEBUG)  $(LDFLAGS_DEBUG) $(LIB_DEBUG)
 
-$(OBJDIR_DEBUG)/file.o: file.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c file.cpp -o $(OBJDIR_DEBUG)/file.o
+$(OBJDIR_DEBUG)/DataBase.o: DataBase.cpp
+	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c DataBase.cpp -o $(OBJDIR_DEBUG)/DataBase.o
 
 $(OBJDIR_DEBUG)/main.o: main.cpp
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c main.cpp -o $(OBJDIR_DEBUG)/main.o
@@ -90,8 +90,8 @@ release: before_release out_release after_release
 out_release: before_release $(OBJ_RELEASE) $(DEP_RELEASE)
 	$(LD) $(LIBDIR_RELEASE) -o $(OUT_RELEASE) $(OBJ_RELEASE)  $(LDFLAGS_RELEASE) $(LIB_RELEASE)
 
-$(OBJDIR_RELEASE)/file.o: file.cpp
-	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c file.cpp -o $(OBJDIR_RELEASE)/file.o
+$(OBJDIR_RELEASE)/DataBase.o: DataBase.cpp
+	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c DataBase.cpp -o $(OBJDIR_RELEASE)/DataBase.o
 
 $(OBJDIR_RELEASE)/main.o: main.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c main.cpp -o $(OBJDIR_RELEASE)/main.o

@@ -14,11 +14,39 @@
 
 					  
 
-						REALITÄT
+					  WAS WIR HABEN
+					  
+					  
+					  
+				struct UserInput 
+					   |
+					   |
+					   |
+					  \ /
+					   
+		__  **************************			  
+			*class scaff(UserInput)	 *
+			*		  			     *
+			**************************
+			
+			|		
+			|
+			|
+		   \ /
+	   Calculates
+	    Material		
+			
+			
+			
+			
+			
+			
+			
+	
 
-					**************
-					*Rahmengerüst*
-					**************
+					 **************
+					 *Rahmengerüst*
+					 **************
 
 	1. Fassadengerüst Berechnungen
 			->Nur Traufseite				implementiert
